@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/YourContract.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract IPFSRegistry {\n\t// A structure to hold arrays of two types of CIDs: .json and .pdf\n\tstruct FileCIDs {\n\t\tstring[] jsonCIDs;\n\t\tstring[] pdfCIDs;\n\t}\n\n\t// Mapping from address to FileCIDs, allowing for multiple CIDs of each type\n\tmapping(address => FileCIDs) private _addressToFileCIDs;\n\n\t// Events that are emitted when a CID is added\n\tevent JsonCIDAdded(address indexed addr, string cid);\n\tevent PdfCIDAdded(address indexed addr, string cid);\n\n\t// Events for when a CID is removed\n\tevent JsonCIDRemoved(address indexed addr, string cid);\n\tevent PdfCIDRemoved(address indexed addr, string cid);\n\n\t// Adds a .json CID for the sender's address\n\tfunction addMyJsonCID(string calldata cid, address _sender) public {\n\t\t_addressToFileCIDs[_sender].jsonCIDs.push(cid);\n\t\temit JsonCIDAdded(_sender, cid);\n\t}\n\n\t// Adds a .pdf CID for the sender's address\n\tfunction addMyPdfCID(string calldata cid, address _sender) public {\n\t\t_addressToFileCIDs[_sender].pdfCIDs.push(cid);\n\t\temit PdfCIDAdded(_sender, cid);\n\t}\n\n\t// Optional: Implement remove functions for Json and Pdf CIDs\n\t// Note: Removing an element from an array requires shifting elements\n\n\t// Retrieves the .json CIDs associated with an address. Returns an empty array if none are set.\n\tfunction getJsonCIDs(address addr) public view returns (string[] memory) {\n\t\treturn _addressToFileCIDs[addr].jsonCIDs;\n\t}\n\n\t// Retrieves the .pdf CIDs associated with an address. Returns an empty array if none are set.\n\tfunction getPdfCIDs(address addr) public view returns (string[] memory) {\n\t\treturn _addressToFileCIDs[addr].pdfCIDs;\n\t}\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
