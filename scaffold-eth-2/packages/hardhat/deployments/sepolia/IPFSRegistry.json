@@ -1,0 +1,247 @@
+{
+  "address": "0x4386AB7f0c0fe572Ce2F12EFE2e85503c7b54997",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "cid",
+          "type": "string"
+        }
+      ],
+      "name": "JsonCIDAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "cid",
+          "type": "string"
+        }
+      ],
+      "name": "JsonCIDRemoved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "cid",
+          "type": "string"
+        }
+      ],
+      "name": "PdfCIDAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "cid",
+          "type": "string"
+        }
+      ],
+      "name": "PdfCIDRemoved",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "cid",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "_sender",
+          "type": "address"
+        }
+      ],
+      "name": "addMyJsonCID",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "cid",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "_sender",
+          "type": "address"
+        }
+      ],
+      "name": "addMyPdfCID",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getJsonCIDs",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "",
+          "type": "string[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getPdfCIDs",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "",
+          "type": "string[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xdb3869d3af0a5f1ecf4ed68c40f1c6170d63594b686ae1c3078e46f464ce1b5a",
+  "receipt": {
+    "to": null,
+    "from": "0xaE4AD8b8d35dbB74259cc1Be3090A33a5Ee4999f",
+    "contractAddress": "0x4386AB7f0c0fe572Ce2F12EFE2e85503c7b54997",
+    "transactionIndex": 98,
+    "gasUsed": "414138",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x710dc5780fe0919fbe3e4f162d6973c083679580e1c16dc84edc2f0de9e5e813",
+    "transactionHash": "0xdb3869d3af0a5f1ecf4ed68c40f1c6170d63594b686ae1c3078e46f464ce1b5a",
+    "logs": [],
+    "blockNumber": 5551251,
+    "cumulativeGasUsed": "11543109",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "a092607e24882c67dd0110140aba1653",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"cid\",\"type\":\"string\"}],\"name\":\"JsonCIDAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"cid\",\"type\":\"string\"}],\"name\":\"JsonCIDRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"cid\",\"type\":\"string\"}],\"name\":\"PdfCIDAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"cid\",\"type\":\"string\"}],\"name\":\"PdfCIDRemoved\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"cid\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"_sender\",\"type\":\"address\"}],\"name\":\"addMyJsonCID\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"cid\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"_sender\",\"type\":\"address\"}],\"name\":\"addMyPdfCID\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getJsonCIDs\",\"outputs\":[{\"internalType\":\"string[]\",\"name\":\"\",\"type\":\"string[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getPdfCIDs\",\"outputs\":[{\"internalType\":\"string[]\",\"name\":\"\",\"type\":\"string[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/YourContract.sol\":\"IPFSRegistry\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/YourContract.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\ncontract IPFSRegistry {\\n\\t// A structure to hold arrays of two types of CIDs: .json and .pdf\\n\\tstruct FileCIDs {\\n\\t\\tstring[] jsonCIDs;\\n\\t\\tstring[] pdfCIDs;\\n\\t}\\n\\n\\t// Mapping from address to FileCIDs, allowing for multiple CIDs of each type\\n\\tmapping(address => FileCIDs) private _addressToFileCIDs;\\n\\n\\t// Events that are emitted when a CID is added\\n\\tevent JsonCIDAdded(address indexed addr, string cid);\\n\\tevent PdfCIDAdded(address indexed addr, string cid);\\n\\n\\t// Events for when a CID is removed\\n\\tevent JsonCIDRemoved(address indexed addr, string cid);\\n\\tevent PdfCIDRemoved(address indexed addr, string cid);\\n\\n\\t// Adds a .json CID for the sender's address\\n\\tfunction addMyJsonCID(string calldata cid, address _sender) public {\\n\\t\\t_addressToFileCIDs[_sender].jsonCIDs.push(cid);\\n\\t\\temit JsonCIDAdded(_sender, cid);\\n\\t}\\n\\n\\t// Adds a .pdf CID for the sender's address\\n\\tfunction addMyPdfCID(string calldata cid, address _sender) public {\\n\\t\\t_addressToFileCIDs[_sender].pdfCIDs.push(cid);\\n\\t\\temit PdfCIDAdded(_sender, cid);\\n\\t}\\n\\n\\t// Optional: Implement remove functions for Json and Pdf CIDs\\n\\t// Note: Removing an element from an array requires shifting elements\\n\\n\\t// Retrieves the .json CIDs associated with an address. Returns an empty array if none are set.\\n\\tfunction getJsonCIDs(address addr) public view returns (string[] memory) {\\n\\t\\treturn _addressToFileCIDs[addr].jsonCIDs;\\n\\t}\\n\\n\\t// Retrieves the .pdf CIDs associated with an address. Returns an empty array if none are set.\\n\\tfunction getPdfCIDs(address addr) public view returns (string[] memory) {\\n\\t\\treturn _addressToFileCIDs[addr].pdfCIDs;\\n\\t}\\n}\\n\",\"keccak256\":\"0xb9b17ddade8e3b22988f3e9ac323f9986a65bb0dabf72ad51302e76acd72b207\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610687806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80634f07013c1461005157806350519a4714610066578063c6f880c31461008f578063dbcb3190146100a2575b600080fd5b61006461005f36600461038d565b6100b5565b005b61007961007436600461040e565b610132565b6040516100869190610430565b60405180910390f35b61007961009d36600461040e565b610222565b6100646100b036600461038d565b610304565b6001600160a01b038116600090815260208181526040822060019081018054918201815583529120016100e9838583610561565b50806001600160a01b03167fc12d8a95e364f0d7e9542dda1726d555c14f622c781768a6bec175ad838d2c6d8484604051610125929190610622565b60405180910390a2505050565b6001600160a01b038116600090815260208181526040808320600101805482518185028101850190935280835260609492939192909184015b8282101561021757838290600052602060002001805461018a906104d8565b80601f01602080910402602001604051908101604052809291908181526020018280546101b6906104d8565b80156102035780601f106101d857610100808354040283529160200191610203565b820191906000526020600020905b8154815290600101906020018083116101e657829003601f168201915b50505050508152602001906001019061016b565b505050509050919050565b6001600160a01b038116600090815260208181526040808320805482518185028101850190935280835260609492939192909184015b82821015610217578382906000526020600020018054610277906104d8565b80601f01602080910402602001604051908101604052809291908181526020018280546102a3906104d8565b80156102f05780601f106102c5576101008083540402835291602001916102f0565b820191906000526020600020905b8154815290600101906020018083116102d357829003601f168201915b505050505081526020019060010190610258565b6001600160a01b03811660009081526020818152604082208054600181018255908352912001610335838583610561565b50806001600160a01b03167f90596d90c3d67ae8746e471ff220819e4a63749abd0ab216704c01013b70ea308484604051610125929190610622565b80356001600160a01b038116811461038857600080fd5b919050565b6000806000604084860312156103a257600080fd5b833567ffffffffffffffff808211156103ba57600080fd5b818601915086601f8301126103ce57600080fd5b8135818111156103dd57600080fd5b8760208285010111156103ef57600080fd5b6020928301955093506104059186019050610371565b90509250925092565b60006020828403121561042057600080fd5b61042982610371565b9392505050565b6000602080830181845280855180835260408601915060408160051b87010192508387016000805b838110156104b457888603603f1901855282518051808852835b8181101561048d578281018a01518982018b01528901610472565b508781018901849052601f01601f1916909601870195509386019391860191600101610458565b509398975050505050505050565b634e487b7160e01b600052604160045260246000fd5b600181811c908216806104ec57607f821691505b60208210810361050c57634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561055c57600081815260208120601f850160051c810160208610156105395750805b601f850160051c820191505b8181101561055857828155600101610545565b5050505b505050565b67ffffffffffffffff831115610579576105796104c2565b61058d8361058783546104d8565b83610512565b6000601f8411600181146105c157600085156105a95750838201355b600019600387901b1c1916600186901b17835561061b565b600083815260209020601f19861690835b828110156105f257868501358255602094850194600190920191016105d2565b508682101561060f5760001960f88860031b161c19848701351681555b505060018560011b0183555b5050505050565b60208152816020820152818360408301376000818301604090810191909152601f909201601f1916010191905056fea2646970667358221220c200a58dd8d62b9dbc11fa54df6ea3ffaf715bf8a883fc85b4ab0938e10c873764736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80634f07013c1461005157806350519a4714610066578063c6f880c31461008f578063dbcb3190146100a2575b600080fd5b61006461005f36600461038d565b6100b5565b005b61007961007436600461040e565b610132565b6040516100869190610430565b60405180910390f35b61007961009d36600461040e565b610222565b6100646100b036600461038d565b610304565b6001600160a01b038116600090815260208181526040822060019081018054918201815583529120016100e9838583610561565b50806001600160a01b03167fc12d8a95e364f0d7e9542dda1726d555c14f622c781768a6bec175ad838d2c6d8484604051610125929190610622565b60405180910390a2505050565b6001600160a01b038116600090815260208181526040808320600101805482518185028101850190935280835260609492939192909184015b8282101561021757838290600052602060002001805461018a906104d8565b80601f01602080910402602001604051908101604052809291908181526020018280546101b6906104d8565b80156102035780601f106101d857610100808354040283529160200191610203565b820191906000526020600020905b8154815290600101906020018083116101e657829003601f168201915b50505050508152602001906001019061016b565b505050509050919050565b6001600160a01b038116600090815260208181526040808320805482518185028101850190935280835260609492939192909184015b82821015610217578382906000526020600020018054610277906104d8565b80601f01602080910402602001604051908101604052809291908181526020018280546102a3906104d8565b80156102f05780601f106102c5576101008083540402835291602001916102f0565b820191906000526020600020905b8154815290600101906020018083116102d357829003601f168201915b505050505081526020019060010190610258565b6001600160a01b03811660009081526020818152604082208054600181018255908352912001610335838583610561565b50806001600160a01b03167f90596d90c3d67ae8746e471ff220819e4a63749abd0ab216704c01013b70ea308484604051610125929190610622565b80356001600160a01b038116811461038857600080fd5b919050565b6000806000604084860312156103a257600080fd5b833567ffffffffffffffff808211156103ba57600080fd5b818601915086601f8301126103ce57600080fd5b8135818111156103dd57600080fd5b8760208285010111156103ef57600080fd5b6020928301955093506104059186019050610371565b90509250925092565b60006020828403121561042057600080fd5b61042982610371565b9392505050565b6000602080830181845280855180835260408601915060408160051b87010192508387016000805b838110156104b457888603603f1901855282518051808852835b8181101561048d578281018a01518982018b01528901610472565b508781018901849052601f01601f1916909601870195509386019391860191600101610458565b509398975050505050505050565b634e487b7160e01b600052604160045260246000fd5b600181811c908216806104ec57607f821691505b60208210810361050c57634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561055c57600081815260208120601f850160051c810160208610156105395750805b601f850160051c820191505b8181101561055857828155600101610545565b5050505b505050565b67ffffffffffffffff831115610579576105796104c2565b61058d8361058783546104d8565b83610512565b6000601f8411600181146105c157600085156105a95750838201355b600019600387901b1c1916600186901b17835561061b565b600083815260209020601f19861690835b828110156105f257868501358255602094850194600190920191016105d2565b508682101561060f5760001960f88860031b161c19848701351681555b505060018560011b0183555b5050505050565b60208152816020820152818360408301376000818301604090810191909152601f909201601f1916010191905056fea2646970667358221220c200a58dd8d62b9dbc11fa54df6ea3ffaf715bf8a883fc85b4ab0938e10c873764736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 13,
+        "contract": "contracts/YourContract.sol:IPFSRegistry",
+        "label": "_addressToFileCIDs",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_struct(FileCIDs)8_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_string_storage)dyn_storage": {
+        "base": "t_string_storage",
+        "encoding": "dynamic_array",
+        "label": "string[]",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_struct(FileCIDs)8_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct IPFSRegistry.FileCIDs)",
+        "numberOfBytes": "32",
+        "value": "t_struct(FileCIDs)8_storage"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_struct(FileCIDs)8_storage": {
+        "encoding": "inplace",
+        "label": "struct IPFSRegistry.FileCIDs",
+        "members": [
+          {
+            "astId": 4,
+            "contract": "contracts/YourContract.sol:IPFSRegistry",
+            "label": "jsonCIDs",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_array(t_string_storage)dyn_storage"
+          },
+          {
+            "astId": 7,
+            "contract": "contracts/YourContract.sol:IPFSRegistry",
+            "label": "pdfCIDs",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_string_storage)dyn_storage"
+          }
+        ],
+        "numberOfBytes": "64"
+      }
+    }
+  }
+}
