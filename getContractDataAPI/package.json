@@ -1,0 +1,28 @@
+{
+  "name": "getcontractdataapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node ./src/index.ts",
+    "node": "npx hardhat node",
+    "deploy:local": "npx hardhat ignition deploy ./ignition/modules/IPFSRegistry.ts --network localhost",
+    "deploy:sepolia": "npx hardhat ignition deploy ./ignition/modules/IPFSRegistry.ts --network sepolia"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "typecript": "^0.0.1-security",
+    "viem": "^2.8.18"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.3",
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@types/express": "^4.17.21",
+    "hardhat": "^2.22.2"
+  }
+}
